@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="external-mirror" />
+      <option name="name" value="external-mirror" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="non_frs" />
+      <option name="name" value="Not Redistributable Software Repo" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="wso2" />
+      <option name="name" value="wso2 Repository" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven.oracle.com" />
+      <option name="name" value="Maven Oracle Repo" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-releases" />
+      <option name="name" value="Local Release Repository" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="wso21" />
+      <option name="name" value="wso21 Repository" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-snapshots" />
+      <option name="name" value="Local Snapshots Repository" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="confluent" />
+      <option name="name" value="Confluent" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven-repo.cityplus-dev.fc.uralsibbank.ru:80/repository/maven-central/" />
+    </remote-repository>
+  </component>
+</project>

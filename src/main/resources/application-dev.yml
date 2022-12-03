@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: @project.name@
+
+omni:
+  sbp:
+    build:
+      timestamp: @maven.build.timestamp@
+      version: @project.version@
+      description: @project.description@
