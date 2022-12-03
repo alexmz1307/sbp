@@ -372,7 +372,7 @@
       <bpmn:outgoing>Flow_064n7yy</bpmn:outgoing>
       <bpmn:compensateEventDefinition id="CompensateEventDefinition_1c27s2y" activityRef="Activity_hold_compensation" />
     </bpmn:intermediateThrowEvent>
-    <bpmn:exclusiveGateway id="Gateway_0lezb3p" default="Flow_1eofwyh">
+    <bpmn:exclusiveGateway id="Gateway_0lezb3p" name="Откат холдирования успешен?" default="Flow_1eofwyh">
       <bpmn:incoming>Flow_064n7yy</bpmn:incoming>
       <bpmn:outgoing>Flow_0xe36kk</bpmn:outgoing>
       <bpmn:outgoing>Flow_1eofwyh</bpmn:outgoing>
@@ -386,10 +386,10 @@
       <bpmn:linkEventDefinition id="LinkEventDefinition_0hsxuha" name="linkAnalysis" />
     </bpmn:intermediateThrowEvent>
     <bpmn:sequenceFlow id="Flow_064n7yy" sourceRef="Event_to_hold_compensation" targetRef="Gateway_0lezb3p" />
-    <bpmn:sequenceFlow id="Flow_0xe36kk" sourceRef="Gateway_0lezb3p" targetRef="Event_declined_after_nspk_comp">
+    <bpmn:sequenceFlow id="Flow_0xe36kk" name="Да" sourceRef="Gateway_0lezb3p" targetRef="Event_declined_after_nspk_comp">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${unholdCode == 0}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
-    <bpmn:sequenceFlow id="Flow_1eofwyh" sourceRef="Gateway_0lezb3p" targetRef="Event_analysis_after_nspk_comp" />
+    <bpmn:sequenceFlow id="Flow_1eofwyh" name="Нет" sourceRef="Gateway_0lezb3p" targetRef="Event_analysis_after_nspk_comp" />
     <bpmn:intermediateThrowEvent id="Event_0w5uc9w" name="UNHOLD">
       <bpmn:incoming>Flow_status_refused</bpmn:incoming>
       <bpmn:linkEventDefinition id="LinkEventDefinition_0tsmfmo" name="linkUnhold" />
@@ -604,6 +604,9 @@
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_0lezb3p_di" bpmnElement="Gateway_0lezb3p" isMarkerVisible="true">
         <dc:Bounds x="1745" y="1065" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1738" y="1020" width="72" height="40" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0e0cqlm_di" bpmnElement="Event_declined_after_nspk_comp">
         <dc:Bounds x="1852" y="1072" width="36" height="36" />
@@ -1164,11 +1167,17 @@
       <bpmndi:BPMNEdge id="Flow_0xe36kk_di" bpmnElement="Flow_0xe36kk">
         <di:waypoint x="1795" y="1090" />
         <di:waypoint x="1852" y="1090" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1817" y="1072" width="13" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1eofwyh_di" bpmnElement="Flow_1eofwyh">
         <di:waypoint x="1770" y="1115" />
         <di:waypoint x="1770" y="1200" />
         <di:waypoint x="1852" y="1200" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1775" y="1155" width="20" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_03dtvtd_di" bpmnElement="Flow_03dtvtd">
         <di:waypoint x="1498" y="1090" />

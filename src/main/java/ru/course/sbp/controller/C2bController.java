@@ -17,7 +17,7 @@ import ru.course.sbp.service.C2bService;
 @Slf4j
 public class C2bController {
 
-    C2bService c2bService;
+    private final C2bService c2bService;
 
     @PostMapping("c2b/transfers/start")
     @Operation(summary = "Запрос старта процесса выполнения перевода С2B", description = "В процессе выполнения происходит проверка в AFS, " +

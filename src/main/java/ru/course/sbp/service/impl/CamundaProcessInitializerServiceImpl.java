@@ -23,6 +23,8 @@ public class CamundaProcessInitializerServiceImpl implements CamundaProcessIniti
             Map<String, Object> variables = new HashMap<>();
             variables.put(ProcessVariables.AFS_STATUS, c2bProcessStart.getAfsStatus());
             variables.put(ProcessVariables.SBP_STATUS, false);
+            variables.put(ProcessVariables.UNHOLD_CODE_RESPONSE, "-1");
+            variables.put(ProcessVariables.ZOLOTAYA_KORONA_STATUS, "-1");
             ProcessEngines.getDefaultProcessEngine()
                     .getRuntimeService()
                     .startProcessInstanceByKey(ProcessName.C2B_PROCESS_NAME, c2bProcessStart.getBusinesKey(), variables);

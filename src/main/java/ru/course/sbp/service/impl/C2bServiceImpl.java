@@ -12,7 +12,7 @@ import ru.course.sbp.service.CamundaProcessInitializerService;
 @Slf4j
 public class C2bServiceImpl implements C2bService {
 
-    private CamundaProcessInitializerService camundaProcessInitializerService;
+    private final CamundaProcessInitializerService camundaProcessInitializerService;
 
     @Override
     public void initC2bPayment(C2bProcessStart c2bProcessStart) {
